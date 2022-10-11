@@ -1,2 +1,2 @@
-# quasar
+# Quasar demo
 Quasar demo
