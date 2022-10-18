@@ -3,12 +3,14 @@
   "version": "0.0.1",
   "description": "A Quasar Project",
   "productName": "Quasar App",
-  "author": "brightness2 <2390408895@qq.com>",
+  "author": "brightness",
   "private": true,
   "scripts": {
     "dev": "quasar dev",
+    "dev:android":"quasar dev -m capacitor -T android",
     "build": "quasar build",
-    "build:pwa": "quasar build -m pwa"
+    "build:pwa": "quasar build -m pwa",
+    "build:android": "quasar build -m capacitor -T android"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",

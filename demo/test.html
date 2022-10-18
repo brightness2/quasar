@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #canvas{
+        border: 1px solid #ccc;
+    }
+</style>
+<body>
+    <h1>canvas</h1>
+    <canvas id="canvas"></canvas>
+
+    <script>
+        const canvas  = document.querySelector('#canvas')
+        const ctx = canvas.getContext("2d")
+        let point = {x:0,y:0};
+
+    
+
+        canvas.addEventListener('mousedown',function(){
+            console.log('Mousedown');
+            ctx.beginPath()
+            ctx.strokeStyle = '#333'
+            ctx.lineCap = "buzz"
+            ctx.lineJoin = "round"
+        })
+
+        canvas.addEventListener('mousemove',function(){
+            console.log('mousemove');
+
+        })
+
+
+    </script>
+</body>
+</html>
