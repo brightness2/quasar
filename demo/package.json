@@ -10,7 +10,7 @@
     "dev:android":"quasar dev -m capacitor -T android",
     "build": "quasar build",
     "build:pwa": "quasar build -m pwa",
-    "build:android": "quasar build -m capacitor -T android"
+    "build:android": "quasar build -m capacitor -T android --ide"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",

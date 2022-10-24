@@ -117,5 +117,23 @@ cordova platform add [android|ios]
 cordova requirements
 
 ```
+## AndroidManifest.xml
+Android 应用程序在位于 android/app/src/main/AndroidManifest.xml 的 AndroidManifest.xml 文件中管理权限、设备功能和其他设置。
+
+应用清单概览 https://developer.android.com/guide/topics/manifest/manifest-intro
 
 
+## 问题
+1、如何查看 usb连接的手机IP
+```
+adb shell ifconfig
+```
+2、重连usb
+```
+ adb tcpip 5555
+```
+3、java.net.SocketTimeoutException: failed to connect to /172.16.99.62 (port 9500) from /172.16.199.6 (port 44959) after 30000ms
+```
+//是因为手机与电脑，ping不通，需要设置在同一个网络下，手机开启网络共享，电脑连接到共享的网络中
+```
+4、为了兼容部分手机，需要通过babel处理代码

@@ -90,7 +90,7 @@ module.exports = configure(function ( ctx ) {
       // proxy:{
 
       // }
-      // https: true
+      // https: true,
       open: false // opens browser window automatically
     },
 
